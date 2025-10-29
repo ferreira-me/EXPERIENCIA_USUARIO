@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Fluxo Linear — Alerta de Enchente (Ana)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root{--bg:#0b1220;--card:#0f172a;--ink:#e2e8f0;--muted:#8aa0b5;--accent:#60a5fa;}
+    *{box-sizing:border-box} body{margin:0;font-family:ui-sans-serif,system-ui,Arial;background:linear-gradient(180deg,#0b1220,#111827);color:var(--ink);}
+    main{max-width:980px;margin:0 auto;padding:28px}
+    h1{font-size:28px;margin:12px 0 8px}
+    .meta{display:grid;grid-template-columns:1fr 1fr;gap:12px;background:linear-gradient(180deg,#101826,#0f172a);border:1px solid #1f2a44;border-radius:16px;padding:14px 16px}
+    .meta .tag{font-weight:700;color:#c7d2fe}
+    .flow{margin-top:18px;display:flex;flex-direction:column;align-items:center;gap:10px}
+    .step{background:linear-gradient(180deg,#0f172a,#0b1220);border:1px solid #1f2a44;border-radius:14px;padding:12px 18px;min-width:320px;text-align:center;font-weight:700;box-shadow:0 2px 0 #000}
+    .arrow{color:var(--muted);font-size:24px}
+    footer{margin-top:20px;color:#9fb0c3;font-size:12px}
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Fluxo Linear — Alerta de Enchente</h1>
+    <section class="meta">
+      <div><span class="tag">Persona:</span> Ana, 28 anos (área de risco)</div>
+      <div><span class="tag">Objetivo:</span> Receber alerta confiável de enchente</div>
+    </section>
+    <section class="flow" aria-label="Fluxo linear com 6 etapas">
+      <div class="step">[Início: Ana abre o app]</div>
+      <div class="arrow" aria-hidden="true">↓</div>
+      <div class="step">[Ativa a localização]</div>
+      <div class="arrow">↓</div>
+      <div class="step">[Recebe notificação de alerta]</div>
+      <div class="arrow">↓</div>
+      <div class="step">[Lê detalhes (mapa + instruções do INPE)]</div>
+      <div class="arrow">↓</div>
+      <div class="step">[Compartilha com vizinhos]</div>
+      <div class="arrow">↓</div>
+      <div class="step">[Fim]</div>
+    </section>
+    <footer>Referência: material da disciplina — exemplo de fluxo linear e objetivo (INPE).</footer>
+  </main>
+</body>
+</html>
